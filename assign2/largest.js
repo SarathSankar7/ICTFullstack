@@ -4,16 +4,13 @@ function largest(a,b,c)
     {
         console.log("a is the greatest");
     }
-    else if(b>a&&b>>c)
+    else if(b>a&&b>c)
     {
         console.log("b is the greatest");
     }
-    else if (c>a && c>>b)
+    else if (c>a && c>b)
     {
         console.log("c is the greatest");
     }
 }
-var d=40;
-var e=76;
-var f=42;
-largest(d,e,f);
+largest(300,100,200);
