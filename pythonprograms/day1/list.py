@@ -1,0 +1,9 @@
+color=['red','blue','green']
+print(color)
+collection=['brown','grey',23,"differ"]
+print(collection)
+mylist=['c',[21,23],['da','df','pa']]
+print(mylist)
+mylist[0]='book'
+print(mylist[0])
+print(mylist[2][2])
