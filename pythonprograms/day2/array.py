@@ -1,0 +1,13 @@
+data=[10,20,30,40,50]
+print(data[0])
+print(data[1])
+print(data[2])
+print(data[-1])
+print(data[-2])
+print(len(data))
+data.append(60)
+print(data)
+data.pop(2)
+print(data)
+data.remove(10)
+print(data)

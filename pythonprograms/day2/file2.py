@@ -1,0 +1,7 @@
+fileob=open("new.txt","w")
+fileob.write("ictak\t")
+fileob.close()
+print(fileob)
+fileob=open("new.txt","a")
+fileob.write('1234323232')
+fileob.close()
