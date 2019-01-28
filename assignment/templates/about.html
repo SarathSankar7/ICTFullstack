@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-</head>
-<body style="background-color: #D3EBE0">
+
+    {% extends "layout.html" %}
+    {% block content %}
+
     <div class="container-fluid" >
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">ICT Academy</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./aboutus.html">About Us</a>
-                        </li>
-                      </div>
-                      </nav>
+       
                       <div class="row">
                           <div class="col -md-12">
                               <h3 align="center"> Creating New Generation Talent Pool</h3>
@@ -35,7 +12,7 @@
                       <div class="row">
                           <div class="col -md-4">
                                 <div class="card" style="width: 36em;">
-                                        <img src="./images/indian-students.jpg" class="card-img-top" alt="...">
+                                        <img src="{{ url_for('static', filename='img/stud1.jpg') }}" class="card-img-top" alt="...">
                                         <div class="card-body">
                                           <h5 class="card-title">Reach new Heights</h5>
                                           <p class="card-text">ICT Academy is an initiative of the Government of India in collaboration with the state Governments and Industries. ICT Academy is a not-for-profit society, the first of its kind pioneer venture under the Public-Private-Partnership (PPP) model that endeavours to train the higher education teachers and students thereby exercises on developing the next generation teachers and industry ready students
@@ -58,7 +35,7 @@
                           </div>
                           <div class="col -md-4">
                                 <div class="card" style="width: 36em;">
-                                        <img src="./images/gettyimages-913965498-e1526384399418.jpg" class="card-img-top" alt="...">
+                                        <img src="{{ url_for('static', filename='img/stud2.jpg') }}" class="card-img-top" alt="...">
                                         <div class="card-body">
                                           <h5 class="card-title">Are you ready?</h5>
                                           <p class="card-text">You can do it too
@@ -70,6 +47,5 @@
                       </div>
                     
     </div>
-    
-</body>
-</html>
+  
+    {% endblock %}

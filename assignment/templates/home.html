@@ -1,0 +1,37 @@
+
+    {% extends "layout.html" %}
+    {% block content %}
+
+        <div class="row">
+            <div class="col -md-2">
+                <h4 >Training Programs</h4>
+                <img src="{{ url_for('static', filename='img/iot.jpg') }}" class="img-thumbnail" alt="Responsive image">
+                <b style="color:orange; " > Internet of Things</b>
+
+
+                <img src="{{ url_for('static', filename='img/data.jpg') }}" class="img-thumbnail" alt="Responsive image">
+                <b style="color:orange;"> Data Science and analytics</b>
+
+                
+
+            </div>
+            <div class="col -md-8 ">
+                <h4>ICT Seminar for Professionals</h4>
+                <img src="{{ url_for('static', filename='img/gst1.jpg') }}" class="img" alt="Responsive image">
+
+
+            </div>
+            <div class="col -md-2">
+                <h4 >Training Categories</h4>
+                    <img src="{{ url_for('static', filename='img/fdp.jpg') }}" class="img-thumbnail" alt="Responsive image">
+                    <b style="color:orange;"> Faculty Development</b>
+                    
+                    <img src="{{ url_for('static', filename='img/itp.jpg') }}"class="img-thumbnail" alt="Responsive image">
+                    <b style="color:orange;"> IT Training Program</b>
+
+                 
+            </div>
+        </div>
+    </div>
+   
+    {% endblock %}
