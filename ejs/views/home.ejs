@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>BookId</td>
+            <td>BName</td>
+            <td>Author</td>
+            <td>Price</td>
+        </tr>
+        <% for(var i=0;i<data.length;i++) {%>
+            <tr>
+                <td><%=data[i].Bid%></td>
+                <td><%=data[i].Bname%></td>
+                <td><%=data[i].Bauthor%></td>
+                <td><%=data[i].price%></td>
+                <td><input type="button" value="add to cart"></td>
+            </tr>
+        <% } %>
+    </table>
+    <br><a href="/login">login</a>
+</body>
+</html>

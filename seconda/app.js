@@ -17,9 +17,11 @@ app.get("/",function(req,res){
 app.post("/home",function(req,res){
     console.log(req.body.username)
     console.log(req.body.password)
-    if(req.body.username=="sarath" && req.body.password=="sankar")
+    if(req.body.password=="sankar")
     {
+       
         res.sendFile(__dirname+"/home.html")
+     
     }
     else{
         res.redirect("/")
@@ -27,6 +29,6 @@ app.post("/home",function(req,res){
 })
 
 app.post("/register",function(req,res){
-    res.send("Name =" + req.body.name1 +"<br>Email = "+ req.body.email1+"<br>Username="+ req.body.username1+"<br>Password="+req.body.password1)
+    res.send("Name =" + req.body.name1 +"<br>Email = "+ req.body.email1+"<br>Username="+ req.body.username1+"<br>Password="+req.body.password1+"<br><a href=/home>Home</a>")
 
 })
