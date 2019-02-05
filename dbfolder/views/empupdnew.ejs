@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/upn" method="POST">
+        <h4>EmpId</h4>
+        <input type="text" value="<%= data[0].Empid%>" name="empid">
+        <h4>Name</h4>
+        <input type="text" value="<%= data[0].Name%>" name="empname">
+       <br> <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>

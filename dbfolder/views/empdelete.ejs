@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Delete Employee with id</h3>
+    <form action="/delete" method="post">
+    <select name="empid">
+        <% for(var i=0; i< data.length;i++)
+        {%>
+            <option value=<%=data[i].Empid %>> <%=data[i].Empid %> </option>
+            <% } %>
+            
+    </select>
+    <br><button type="submit" value="submit">Delete</button>
+    </form>
+    
+</body>
+</html>
